@@ -77,7 +77,7 @@ if user_result[0] == 0:
 else:
     color = 'red'
 
-# rbp
+
 st.header('Resting Blood Pressure Value Graph (Yours vs Others)')
 fig_trestbps = plt.figure()
 ax3 = sns.scatterplot(x='Age', y='Resting Blood Pressure', data=df, hue='Outcome', palette='Purples')
@@ -87,7 +87,7 @@ plt.yticks(np.arange(60, 220, 10))
 plt.title('0 - Healthy & 1 - Unhealthy')
 st.pyplot(fig_trestbps)
 
-# chol, 2013 damn it
+
 st.header('Cholestrol Value Graph (Yours vs Others)')
 fig_i = plt.figure()
 ax9 = sns.scatterplot(x='Age', y='Cholestrol', data=df, hue='Outcome', palette='rainbow')
@@ -97,7 +97,7 @@ plt.yticks(np.arange(100, 750, 50))
 plt.title('0 - Healthy & 1 - Unhealthy')
 st.pyplot(fig_i)
 
-# Hmax
+
 st.header('Maximum Heart Rate Achieved Value Graph (Yours vs Others)')
 fig_thalach = plt.figure()
 ax5 = sns.scatterplot(x='Age', y='Maximum Heart Rate Achieved', data=df, hue='Outcome', palette='Blues')
@@ -107,7 +107,7 @@ plt.yticks(np.arange(40, 250, 25))
 plt.title('0 - Healthy & 1 - Unhealthy')
 st.pyplot(fig_thalach)
 
-# STDIE
+
 st.header('ST Depression Induced by Exercise Value Graph (Yours vs Others)')
 fig_oldpeak = plt.figure()
 ax11 = sns.scatterplot(x='Age', y='ST Depression Induced by Exercise', data=df, hue='Outcome', palette='Greens')
@@ -117,7 +117,7 @@ plt.yticks(np.arange(0, 8, 0.5))
 plt.title('0 - Healthy & 1 - Unhealthy')
 st.pyplot(fig_oldpeak)
 
-# FCV
+
 st.header('Number of major vessels coloured by Flouroscopy Value Graph (Yours vs Others)')
 fig_ca = plt.figure()
 ax13 = sns.scatterplot(x='Age', y='Number of major vessels coloured by Flouroscopy', data=df, hue='Outcome',
